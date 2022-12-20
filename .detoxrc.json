@@ -1,6 +1,11 @@
 {
-  "testRunner": "jest",
-  "runnerConfig": "e2e/config.json",
+  "testRunner": {
+    "args": {
+      "$0": "jest",
+      "bail": true,
+      "config": "e2e/jest.config.js"
+    }
+  },
   "apps": {
     "ios.release": {
       "type": "ios.app",
@@ -39,7 +44,7 @@
     "emulator": {
       "type": "android.emulator",
       "device": {
-        "avdName": "Pixel_3A_API_29"
+        "avdName": "Pixel_5_API_31"
       }
     }
   },
